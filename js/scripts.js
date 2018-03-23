@@ -7,16 +7,28 @@ $(document).ready(function() {
     var question5 = parseInt($("#question5").val());
     var sum = question1 + question2 + question3 + question4 + question5;
     if(sum <= 7){
-      alert("Ruby/Rails");
+      $("#ruby").show();
+      $("#java").hide();
+      $("#css").hide();
+      $("#cSharp").hide();
     }
     else if(sum <= 11){
-      alert("Java/Android");
+      $("#java").show();
+      $("#ruby").hide();
+      $("#css").hide();
+      $("#cSharp").hide();
     }
     else if(sum <= 15){
-      alert("CSS/React");
+      $("#css").show();
+      $("#java").hide();
+      $("#ruby").hide();
+      $("#cSharp").hide();
     }
     else{
-      alert("C#/.NET");
+      $("#cSharp").show();
+      $("#java").hide();
+      $("#css").hide();
+      $("#ruby").hide();
     }
     event.preventDefault();
   });
