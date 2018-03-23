@@ -5,30 +5,24 @@ $(document).ready(function() {
     var question3 = parseInt($("#question3").val());
     var question4 = parseInt($("#question4").val());
     var question5 = parseInt($("#question5").val());
+    var nameInput = $("input#name").val();
     var sum = question1 + question2 + question3 + question4 + question5;
+    $(".name1").append(nameInput);
     if(sum <= 7){
-      $("#ruby").show();
-      $("#java").hide();
-      $("#css").hide();
-      $("#cSharp").hide();
+      $("#ruby").fadeIn();
+      $("#header").hide();
     }
     else if(sum <= 11){
-      $("#java").show();
-      $("#ruby").hide();
-      $("#css").hide();
-      $("#cSharp").hide();
+      $("#java").fadeIn();
+      $("#header").hide();
     }
     else if(sum <= 15){
-      $("#css").show();
-      $("#java").hide();
-      $("#ruby").hide();
-      $("#cSharp").hide();
+      $("#css").fadeIn();
+      $("#header").hide();
     }
     else{
-      $("#cSharp").show();
-      $("#java").hide();
-      $("#css").hide();
-      $("#ruby").hide();
+      $("#cSharp").fadeIn();
+      $("#header").hide();
     }
     event.preventDefault();
   });

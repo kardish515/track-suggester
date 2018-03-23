@@ -9,60 +9,68 @@
   </head>
   <body>
     <div class="container">
-      <h1>Track Suggester!</h1>
-      <h2>Answer the following questions to decide which track is best for you.</h2>
-      <form id="formOne">
-        <h3>Where would you rather work?</h3>
-        <select class="form-control" id="question1">
-          <option value="1">A startup company</option>
-          <option value="2">An enterprise-level company</option>
-          <option value="3">A front-end developer company</option>
-          <option value="4">A bigger established business</option>
-        </select>
-        <h3>What are you interested in?</h3>
-        <select class="form-control" id="question2">
-          <option value="1">Building interactive web applications</option>
-          <option value="2">High-performance applications</option>
-          <option value="3">Design</option>
-          <option value="4">Building internal software</option>
-        </select>
-        <h3>What else are you interested in?</h3>
-        <select class="form-control" id="question3">
-          <option value="1">Interacting with dynamic content</option>
-          <option value="2">Building Anroid user interfaces</option>
-          <option value="3">Making things look and work well</option>
-          <option value="4">Working on business software</option>
-        </select>
-        <h3>What word best describes you?</h3>
-        <select class="form-control" id="question4">
-          <option value="1">Interactive</option>
-          <option value="2">Popular</option>
-          <option value="3">Designer</option>
-          <option value="4">Stable</option>
-        </select>
-        <h3>Is it important to choose a popular programming language?</h3>
-        <select class="form-control" id="question5">
-          <option value="1">Yes</option>
-          <option value="2">Very</option>
-          <option value="3">Somewhat</option>
-          <option value="4">Of course</option>
-        </select>
-        <button type="submit" class="btn">Submit</button>
-      </form>
+      <div id=header>
+        <div class="jumbotron">
+          <h1>Track Suggester!</h1>
+          <h2>Answer the following questions to decide which track is best for you.</h2>
+        </div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="name">Please enter your name.</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <h3>Where would you rather work?</h3>
+          <select class="form-control" id="question1">
+            <option value="1">A startup company</option>
+            <option value="2">An enterprise-level company</option>
+            <option value="3">A front-end developer company</option>
+            <option value="4">A bigger established business</option>
+          </select>
+          <h3>What are you interested in?</h3>
+          <select class="form-control" id="question2">
+            <option value="1">Building interactive web applications</option>
+            <option value="2">High-performance applications</option>
+            <option value="3">Design</option>
+            <option value="4">Building internal software</option>
+          </select>
+          <h3>What else are you interested in?</h3>
+          <select class="form-control" id="question3">
+            <option value="1">Interacting with dynamic content</option>
+            <option value="2">Building Anroid user interfaces</option>
+            <option value="3">Making things look and work well</option>
+            <option value="4">Working on business software</option>
+          </select>
+          <h3>What word best describes you?</h3>
+          <select class="form-control" id="question4">
+            <option value="1">Interactive</option>
+            <option value="2">Popular</option>
+            <option value="3">Designer</option>
+            <option value="4">Stable</option>
+          </select>
+          <h3>Is it important to choose a popular programming language?</h3>
+          <select class="form-control" id="question5">
+            <option value="1">Yes</option>
+            <option value="2">Very</option>
+            <option value="3">Somewhat</option>
+            <option value="4">Of course</option>
+          </select>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
       <div id="ruby">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations <span class = name1></span>!</h1>
         <h2>Your track is Ruby/Rails.</h2>
       </div>
       <div id="java">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations <span class = name1></span>!</h1>
         <h2>Your track is Java/Android.</h2>
       </div>
       <div id="css">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations <span class = name1></span>!</h1>
         <h2>Your track is CSS/React.</h2>
       </div>
       <div id="cSharp">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations <span class = name1></span>!</h1>
         <h2>Your track is C#/.NET.</h2>
       </div>
     </div>
